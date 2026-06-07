@@ -1,0 +1,44 @@
+name: cidade_inteligente
+description: Aplicativo de denúncias urbanas e comunicação entre moradores e prefeitura.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Navegação
+  go_router: ^13.0.0
+
+  # Ícones
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.9
+
+  # Imagens
+  cached_network_image: ^3.3.1
+  image_picker: ^1.0.7
+  # Estado simples
+  provider: ^6.1.1
+
+  # Utilitários
+  intl: ^0.19.0
+  timeago: ^3.6.1
+  uuid: ^4.3.3
+
+  # UI extras
+  shimmer: ^3.0.0
+  badges: ^3.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
