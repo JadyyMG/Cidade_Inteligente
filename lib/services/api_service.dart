@@ -126,9 +126,17 @@ Future<Map<String, dynamic>> login({
     ).timeout(const Duration(seconds: 10),
         onTimeout: () => throw Exception('Servidor não respondeu'));
 
+      debugPrint('STATUS CRIAR DENÚNCIA: ${response.statusCode}');
+      debugPrint('BODY CRIAR DENÚNCIA: ${response.body}');
+
     final data = jsonDecode(response.body) as Map<String, dynamic>;
     if (data.containsKey('erro')) throw Exception(data['erro']);
     return data;
+  } 
+  
+  catch (e) {
+    debugPrint('ERRO CRIAR DENÚNCIA: $e');
+    rethrow;
   }
 
   Future<void> atualizarStatus({

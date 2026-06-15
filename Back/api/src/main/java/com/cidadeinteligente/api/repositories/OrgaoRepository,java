@@ -1,9 +1,0 @@
-package com.cidadeinteligente.api.repositories;
-
-import com.cidadeinteligente.api.entities.Orgao;
-import org.springframework.data.jpa.repository.JpaRepository;
-import java.util.List;
-
-public interface OrgaoRepository extends JpaRepository<Orgao, Integer> {
-    List<Orgao> findByAtivoTrue();
-}

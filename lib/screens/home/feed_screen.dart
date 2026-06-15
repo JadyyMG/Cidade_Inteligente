@@ -129,7 +129,7 @@ class _ListaDenuncias extends StatelessWidget {
     return RefreshIndicator(
       onRefresh: () async => await Future.delayed(const Duration(seconds: 1)),
       child: ListView.builder(
-        padding: const EdgeInsets.only(top: 8, bottom: 100),
+        padding: const EdgeInsets.only(top: 8, bottom: 160),
         itemCount: denuncias.length,
         itemBuilder: (context, index) => DenunciaCard(
           denuncia: denuncias[index],

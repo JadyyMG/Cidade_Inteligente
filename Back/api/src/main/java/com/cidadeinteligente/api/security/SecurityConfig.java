@@ -32,7 +32,7 @@ public class SecurityConfig {
     private final UsuarioRepository usuarioRepository;
 
     // Libera todas as rotas por enquanto (sem JWT ainda)
-    // Adicionaremos autenticação JWT na próxima etapa
+    // Vou adicionar o JWT na próxima etapa
     @Bean
 public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
     http
